@@ -10,34 +10,58 @@ class FizzBuzz {
 
         while(i <= 100){  // always need the increment and {} when making loop
 
-            i = doFizzBuzz(i);
+            // Find out which numbers divide i.
+            boolean divisibleBy3 = i % 3 == 0;
+            boolean divisibleBy5 = i % 5 == 0;
+
+            // Print our appropriate result.
+            if (divisibleBy3 && divisibleBy5) { // && is and, and then || is or
+
+                System.out.println("Fizz Buzz");
+
+            } else if (divisibleBy3) {
+
+                System.out.println("Fizz");
+
+            } else if (divisibleBy5) {
+
+                System.out.println("Buzz");
+
+            } else {
+
+                System.out.println(i);
+
+            }
+            i++;
         }
     }
 
-    private static int doFizzBuzz(int i) {
-        // Find out which numbers divide i.
-        boolean divisibleBy3 = i % 3 == 0;
-        boolean divisibleBy5 = i % 5 == 0;
+    public static void doFizzBuzz(int i) {
+        while(i <= 100){  // always need the increment and {} when making loop
 
-        // Print our appropriate result.
-        if (divisibleBy3 && divisibleBy5) { // && is and, and then || is or
+            // Find out which numbers divide i.
+            boolean divisibleBy3 = i % 3 == 0;
+            boolean divisibleBy5 = i % 5 == 0;
 
-            System.out.println("Fizz Buzz");
+            // Print our appropriate result.
+            if (divisibleBy3 && divisibleBy5) { // && is and, and then || is or
 
-        } else if (divisibleBy3) {
+                System.out.println("Fizz Buzz");
 
-            System.out.println("Fizz");
+            } else if (divisibleBy3) {
 
-        } else if (divisibleBy5) {
+                System.out.println("Fizz");
 
-            System.out.println("Buzz");
+            } else if (divisibleBy5) {
 
-        } else {
+                System.out.println("Buzz");
 
-            System.out.println(i);
+            } else {
 
+                System.out.println(i);
+
+            }
+            i++;
         }
-        i++;
-        return i;
     }
 }
