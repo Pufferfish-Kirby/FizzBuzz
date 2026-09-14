@@ -56,7 +56,7 @@ which enables basic typesetting when viewed while still being a plaintext format
 editing and version control.
 
 Below is a blank checkbox:
-- [ ] Put an X in the [ ] (with no spaces) to mark this as done!
+- [X] Put an X in the [ ] (with no spaces) to mark this as done!
 
 You can edit this file directly to check off these checkboxes throughout the lab to mark things as done.
 Do so now for the checkbox above.
@@ -139,7 +139,7 @@ class FizzBuzz {
 }
 ```
 
-What is the last string that the program will print?
+What is the last string that the program will print? It will be Buzz
 
 - [ ] Open [`src/lab1/FizzBuzz.java`](src/lab1/FizzBuzz.java) and click the run button in the top left corner to run `FizzBuzz` to check your answer.
 
@@ -189,7 +189,7 @@ method `main` in the file you choose to run.
 
 ### Task 1.1: Rewrite this using `while`
 
-- [ ] You've puzzled through how Java `for` and `if` statements work; now rewrite this
+- [X] You've puzzled through how Java `for` and `if` statements work; now rewrite this
 to use a `while` loop instead of a `for` loop.
 
 ## How to test this code
